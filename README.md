@@ -1,19 +1,37 @@
-# React + Vite
+# BuildPulse 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+BuildPulse is a real-time developer dashboard and CI/CD monitoring platform that connects directly with GitHub to aggregate and visualize repository health, open issues, pull requests, code coverage, test pass rates, and pipeline stability.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🌟 Features
 
-## React Compiler
+* **GitHub OAuth Authentication:** Secure, seamless sign-in using your GitHub account.
+* **Real-Time GitHub & CI Metric Sync:** Fetch and compute live health scores, open issues, open PRs, and active CI/CD statuses (`has_ci`).
+* **CI/CD Visibility Pills:** Instantly distinguishes repositories with active workflow runs from those without configured CI/CD.
+* **Dynamic Dashboard:** Clean, responsive analytics interface built to track team and project velocity at a glance.
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+---
 
-Note: This will impact Vite dev & build performances.
-You can also try [the experimental native React Compiler support in plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#rust-react-compiler) by using `compiler: true` in the plugin options instead of using the Babel plugin.
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+* **Frontend:** React (Vite), Tailwind CSS, Lucide Icons
+* **Backend:** Node.js, Express.js, Octokit (GitHub REST API)
+* **Database:** PostgreSQL (v18) with connection pooling (`pg`)
+* **Deployment:** Vercel (Frontend) & Render (Backend API & Managed PostgreSQL)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🚀 Live Demo
+
+* **Frontend Dashboard:** [https://buildpulse-lime.vercel.app/](https://buildpulse-lime.vercel.app/)
+* **Backend API:** [https://buildpulse-kqzb.onrender.com/](https://buildpulse-kqzb.onrender.com/)
+
+---
+
+## ⚙️ Local Development Setup
+
+### 1. Clone the Repository
+```bash
+git clone [https://github.com/your-username/BuildPulse.git](https://github.com/your-username/BuildPulse.git)
+cd BuildPulse
